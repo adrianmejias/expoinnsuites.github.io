@@ -10,13 +10,33 @@
 
 {% assign user = site.github.owner %}
 
+{% assign site_name = 'Expo Inn & Suites' %}
+
+{% assign show_reservation = false %}
+
+{% assign show_socialicons = false %}
+
+{% assign show_aboutus = false %}
+
+{% assign show_reviews = false %}
+
+{% assign show_services = false %}
+
+{% assign show_rooms = false %}
+
+{% assign show_slider = false %}
+
+{% assign show_nav = false %}
+
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Expo Inn &amp; Suites</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <link href="{{ "/assets/styles.css" | absolute_url }}" rel="stylesheet" type="text/css"> -->
-    <link href="{{ "/assets/styles.css" }}" rel="stylesheet" type="text/css">
+      <meta charset="utf-8">
+      <title>{{ site_name }}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+      <!-- <link href="{{ "/assets/styles.css" | absolute_url }}" rel="stylesheet" type="text/css"> -->
+      <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+      <!-- <link href="/assets/css/slick-theme.css" rel="stylesheet" type="text/css"> -->
   </head>
   <body class="bg-white" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>

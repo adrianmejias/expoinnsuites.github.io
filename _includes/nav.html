@@ -1,0 +1,30 @@
+<header>
+    <div class="container">
+        <div class="pagehead">
+            <h1>
+                {{ site_name }}
+            </h1>
+        </div>
+        {% if show_nav %}
+        <nav class="UnderlineNav">
+          <div class="UnderlineNav-body">
+            <a href="/" role="tab" title="Home" class="UnderlineNav-item {% if include.active == 'index' %}selected{% endif %}">
+                Home
+            </a>
+            <a href="/explore" role="tab" title="Explore" class="UnderlineNav-item {% if include.active == 'explore' %}selected{% endif %}">
+                Explore
+            </a>
+            <a href="/rooms" role="tab" title="Rooms" class="UnderlineNav-item {% if include.active == 'rooms' %}selected{% endif %}">
+                Rooms
+            </a>
+            <a href="/booking" role="tab" title="Booking" class="UnderlineNav-item {% if include.active == 'booking' %}selected{% endif %}">
+                Booking
+            </a>
+            <a href="/contact" role="tab" title="Contact" class="UnderlineNav-item {% if include.active == 'contact' %}selected{% endif %}">
+                Contact
+            </a>
+          </div>
+        </nav>
+        {% endif %}
+    </div>
+</header>

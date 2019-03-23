@@ -1,0 +1,24 @@
+{% include header.html %}
+
+{% include nav.html active='contact' %}
+
+{% include title.html name='Contact Us' %}
+
+<section class="tm-booking">
+    <form>
+        <div class="tm-form1">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKn5np7UDQIUgk4ROh-pFCIgOIpHZYzpR2v8Wbl7wPNWbmNA/viewform?embedded=true" width="640" height="1316" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+    </form>
+    <div class="vertical-line"> </div>
+    <div class="tm-form2">
+        <div class="tm-cl">
+            <p class="here">
+                We are situated over here <img id="place" src="/assets/images/placeholder.png">
+            </p>
+            <div id="map"></div>
+        </div>
+    </div>
+</section>
+
+{% include footer.html gmap=true %}

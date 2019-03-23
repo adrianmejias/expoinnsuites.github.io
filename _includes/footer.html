@@ -1,2 +1,70 @@
+      {% if show_reservation %}
+        <section class="tm-makeres">
+          <div class="tm-res">
+            <div class="tm-resbutton">
+              <p>
+                <a href="/booking">
+                  Make Reservation
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+      {% endif %}
+			<footer class="tm-footer">
+          {% if show_aboutus %}
+            <div class="tm-us">
+                <p class="bold">
+                  About Us
+                </p>
+                <p>
+                  We are a part of chain of luxury hotels which extends all over the world. We provide a luxorious stay with various value added and free services which will make you visit us over and over again.
+                </p>
+            </div>
+          {% endif %}
+          <div class="tm-address">
+              <p class="bold">
+                Address
+              </p>
+              <p>
+                <a href="https://www.google.com/maps/dir//235+W+Loop+121,+Belton,+TX+76513/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x86453f9c6bfd4dc7:0x88d767c763de6dcb?sa=X&ved=2ahUKEwiOv7CFoZnhAhVH4qwKHZ0gADgQwwUwAHoECAoQAw" target="_blank" class="text-white">
+                  235 W Loop 121, Belton, TX 76513
+                </a>
+              </p>
+              <p>
+                Phone: (254) 613-5289
+              </p>
+              <!-- <p>
+                Email: info@expoinnsuites.com
+              </p> -->
+          </div>
+          {% if show_socialicons %}
+            <br />
+            <div class="tm-media">
+                <a href="#">
+                  <img src="/assets/images/fb.png">
+                </a>
+                <a href="#">
+                  <img src="/assets/images/G.png">
+                </a>
+                <a href="#">
+                  <img src="/assets/images/twittr.png">
+                </a>
+                <a href="#">
+                  <img src="/assets/images/insta.png">
+                </a>
+            </div>
+          {% endif %}
+          <!-- <a  href="#top"><img class="tm-up" src="/assets/images/up.png"></a> -->
+      </footer>
+      <script rel="preload" src="/assets/js/jquery.min.js"></script>
+      <script src="/assets/js/pickmeup.min.js"></script>
+      <script src="/assets/js/handleCounter.js"></script>
+      <script src="/assets/js/slick.js"></script>
+      <!-- <script src="/assets/js/jquery.scrollUp.js"></script> -->
+      <script src="/assets/js/app.js"></script>
+      {% if include.gmap %}
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3tO4SQlk9ZVpuhRXlmNfYh37e63-Li2k&callback=initMap"></script>
+      {% endif %}
   </body>
 </html>
